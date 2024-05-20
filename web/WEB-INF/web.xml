@@ -14,7 +14,7 @@
     </servlet-mapping>
      <servlet>
         <servlet-name>Preview</servlet-name>
-        <servlet-class>Controllers.HomePage.HomePage</servlet-class>
+        <servlet-class>Controllers.HomePage.Preview</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>Preview</servlet-name>
