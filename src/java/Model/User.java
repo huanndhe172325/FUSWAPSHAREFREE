@@ -12,6 +12,7 @@ public class User {
     private int UserID;
     private String Email;
     private String Phone;
+    private String AvatarURL;
     private String PassWord;
     private String JoinDate;
     private String UserName;
@@ -26,10 +27,11 @@ public class User {
     public User() {
     }
 
-    public User(int UserID, String Email, String Phone, String PassWord, String JoinDate, String UserName, String Full_Name, String District, String Commune, String StreetNumber, int Point, int RoleID, int StatusID) {
+    public User(int UserID, String Email, String Phone,String AvatarURL, String PassWord, String JoinDate, String UserName, String Full_Name, String District, String Commune, String StreetNumber, int Point, int RoleID, int StatusID) {
         this.UserID = UserID;
         this.Email = Email;
         this.Phone = Phone;
+        this.AvatarURL = AvatarURL;
         this.PassWord = PassWord;
         this.JoinDate = JoinDate;
         this.UserName = UserName;
@@ -40,6 +42,14 @@ public class User {
         this.Point = Point;
         this.RoleID = RoleID;
         this.StatusID = StatusID;
+    }
+
+    public String getAvatarURL() {
+        return AvatarURL;
+    }
+
+    public void setAvatarURL(String AvatarURL) {
+        this.AvatarURL = AvatarURL;
     }
 
     public int getUserID() {
